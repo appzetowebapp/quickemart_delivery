@@ -95,19 +95,11 @@
             android:value="2" />
             
         <!-- FCM delivers directly to this channel when app is background/closed.
-<<<<<<< HEAD
              Must be the silent channel so non-order notifications do not play the custom ringtone.
              (Data-only FCM messages bypass this and are handled by firebaseMessagingBackgroundHandler) -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="silent_notifications_v1" />
-=======
-             Must be the critical channel so new-order notifications ring with sound.
-             (Data-only FCM messages bypass this and are handled by firebaseMessagingBackgroundHandler) -->
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_channel_id"
-            android:value="critical_order_alerts_v5" />
->>>>>>> 0d018130fa9fe52164026809da91b087be2528ae
             
         <!-- Firebase Cloud Messaging -->
         <service
@@ -128,7 +120,16 @@
             android:exported="false"
            tools:replace="android:foregroundServiceType,android:exported" />
 
-
+        <!-- InAppWebView FileProvider for Camera support -->
+        <provider
+            android:name="com.pichillilorenzo.flutter_inappwebview_android.InAppWebViewFileProvider"
+            android:authorities="${applicationId}.flutter_inappwebview_android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
 
     </application>
     

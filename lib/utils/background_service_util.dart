@@ -29,7 +29,7 @@ void onStart(ServiceInstance service) async {
 
     // Set initial notification content once
     service.setForegroundNotificationInfo(
-      title: "Rozsewa Partner Service Active",
+      title: "Indian Bite Delivery Service Active",
       content: "Waiting for new orders...",
     );
 
@@ -81,7 +81,7 @@ void onStart(ServiceInstance service) async {
 
         // Reset notification info
         service.setForegroundNotificationInfo(
-          title: "Rozsewa Partner Service Active",
+          title: "Indian Bite Delivery Service Active",
           content: "Waiting for new orders...",
         );
       }

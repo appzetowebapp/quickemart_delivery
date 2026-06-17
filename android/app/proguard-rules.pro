@@ -1,9 +1,5 @@
 # ============================================================
-<<<<<<< HEAD
 # ProGuard / R8 keep rules for Indian Bite Delivery (Release)
-=======
-# ProGuard / R8 keep rules forIndian Bite Delivery Store (Release)
->>>>>>> 0d018130fa9fe52164026809da91b087be2528ae
 # ============================================================
 # Without these rules, R8 (minifyEnabled true) strips classes
 # used by audioplayers, flutter_background_service, and
