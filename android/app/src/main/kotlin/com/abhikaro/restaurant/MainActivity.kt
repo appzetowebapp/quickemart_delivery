@@ -1,4 +1,4 @@
-package com.quickemart.seller
+package com.quickemart.delivery
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -11,7 +11,7 @@ import io.flutter.plugin.common.MethodChannel
 import android.content.Intent
 
 class MainActivity: FlutterActivity() {
-    private val CHANNEL = "com.quickemart.seller/geolocation"
+    private val CHANNEL = "com.quickemart.delivery/geolocation"
     private val LOCATION_PERMISSION_REQUEST_CODE = 1
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
